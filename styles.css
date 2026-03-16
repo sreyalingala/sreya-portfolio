@@ -748,54 +748,160 @@ body {
   border-radius: 4px;
 }
 
-/* ===== Contact ===== */
+/* ===== Contact (premium) ===== */
 .section-contact {
   text-align: center;
   padding-bottom: 6rem;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.contact-lead {
-  font-size: 1.25rem;
+.contact-head {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.contact-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.contact-title {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: clamp(2.25rem, 5vw, 2.75rem);
+  letter-spacing: -0.03em;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-title span {
+  background: linear-gradient(135deg, #fff 0%, var(--accent) 50%, var(--accent-2) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contact-title-glow {
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 160%;
+  background: radial-gradient(ellipse at 50% 50%, rgba(0, 212, 255, 0.08) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.contact-divider {
+  width: 100%;
+  max-width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  border-radius: 2px;
+  margin: 0 auto 1.75rem;
+}
+
+.contact-copy {
+  font-size: 1.05rem;
   color: var(--text-muted);
-  margin-bottom: 1.5rem;
+  line-height: 1.65;
+  margin-bottom: 2rem;
 }
 
-.contact-links {
+.contact-card {
+  background: linear-gradient(145deg, rgba(12, 12, 16, 0.95), rgba(8, 8, 12, 0.98));
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius);
+  padding: 2.25rem 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at 50% 0%, rgba(0, 212, 255, 0.06) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.contact-card:hover {
+  border-color: rgba(0, 212, 255, 0.15);
+  box-shadow: 0 12px 40px rgba(0, 212, 255, 0.06);
+}
+
+.contact-ctas {
   display: flex;
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 1.25rem;
 }
 
-.btn {
-  display: inline-block;
-  padding: 0.9rem 2rem;
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1rem;
   text-decoration: none;
   border-radius: var(--radius-sm);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  min-height: 52px;
 }
 
-.btn-primary {
+.contact-btn-primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: var(--bg);
 }
 
-.btn-primary:hover {
+.contact-btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px var(--glow);
+  box-shadow: 0 12px 32px rgba(0, 212, 255, 0.35);
 }
 
-.btn-outline {
-  border: 2px solid rgba(255, 255, 255, 0.2);
+.contact-btn-secondary {
+  border: 2px solid rgba(255, 255, 255, 0.15);
   color: var(--text);
 }
 
-.btn-outline:hover {
-  border-color: var(--accent);
+.contact-btn-secondary:hover {
+  border-color: rgba(0, 212, 255, 0.4);
   color: var(--accent);
   transform: translateY(-2px);
+}
+
+.contact-email {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.contact-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.contact-meta-dot {
+  opacity: 0.5;
 }
 
 /* ===== Footer ===== */
@@ -1003,18 +1109,26 @@ body {
   /* Contact */
   .section-contact {
     padding-bottom: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-  .contact-links {
+  .contact-card {
+    padding: 1.75rem 1.25rem;
+  }
+  .contact-ctas {
     flex-direction: column;
     align-items: stretch;
     gap: 0.75rem;
   }
-  .btn {
+  .contact-btn {
     min-height: 48px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 1.5rem;
+    padding: 0.95rem 1.5rem;
+  }
+  .contact-copy {
+    font-size: 1rem;
+  }
+  .contact-meta {
+    font-size: 0.75rem;
   }
   /* Footer */
   .footer {
