@@ -132,3 +132,42 @@ nav a:hover {
   font-size: 0.95rem;
   color: var(--muted);
 }
+
+.project {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: var(--surface);
+  border-radius: 8px;
+}
+
+.project h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.35rem;
+}
+
+.project .tech {
+  font-size: 0.85rem;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.project p:last-of-type {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.contact a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
