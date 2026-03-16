@@ -724,20 +724,190 @@ body {
   .exp-card {
     padding: 1.5rem 1.25rem 1.5rem 1.5rem;
   }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-card {
+    padding: 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
   .header {
     padding: 0.75rem 1rem;
+    padding-top: max(0.75rem, env(safe-area-inset-top));
+  }
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  .nav-links {
+    gap: 0.875rem;
+    justify-content: center;
   }
   .nav-links a {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
   .hero {
-    padding: 5rem 1rem 3rem;
+    padding: 4.5rem 1rem 3rem;
+    min-height: 100vh;
+  }
+  .hero-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+  }
+  .hero-name {
+    font-size: clamp(2.25rem, 11vw, 3rem);
+  }
+  .hero-tagline {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
   }
   .hero-stats {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  .stat-num {
+    font-size: 1.5rem;
+  }
+  .stat-label {
+    font-size: 0.7rem;
+  }
+  .hero-cta {
+    padding: 0.85rem 1.75rem;
+    font-size: 0.9rem;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section {
+    padding: 2.75rem 1rem;
+  }
+  .section-title {
+    font-size: clamp(1.75rem, 6vw, 2.25rem);
+    margin-bottom: 1.75rem;
+  }
+  /* About */
+  .section-about {
+    padding: 2.75rem 1rem;
+  }
+  .about-eyebrow {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    padding-left: 0.75rem;
+    border-left-width: 2px;
+  }
+  .about-title {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+  .about-divider {
+    margin-bottom: 2rem;
+  }
+  .about-lead {
+    font-size: 1.1rem;
+  }
+  .about-body {
+    font-size: 0.95rem;
+  }
+  .about-stat-cards {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+  .about-stat-card {
+    padding: 0.9rem 1rem;
+  }
+  .about-stat-num {
+    font-size: 1.25rem;
+  }
+  .about-tech-wrap {
+    padding: 1.25rem;
+  }
+  .about-pill {
+    padding: 0.45rem 0.8rem;
+    font-size: 0.78rem;
+  }
+  /* Experience */
+  .exp-card {
+    padding: 1.25rem 1rem 1.25rem 1.25rem;
+  }
+  .exp-card-accent {
+    width: 2px;
+  }
+  .exp-card-header {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  .exp-card-icon {
+    width: 36px;
+    height: 36px;
+  }
+  .exp-card-title {
+    font-size: 1.05rem;
+  }
+  .exp-card-meta {
+    font-size: 0.85rem;
+  }
+  .exp-card-list li {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  /* Projects */
+  .project-card {
+    padding: 1.25rem;
+  }
+  .project-card h3 {
+    font-size: 1.05rem;
+  }
+  .project-desc {
+    font-size: 0.9rem;
+  }
+  /* Contact */
+  .section-contact {
+    padding-bottom: 4rem;
+  }
+  .contact-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  .btn {
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+  }
+  /* Footer */
+  .footer {
+    padding: 1.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+  .hero-name {
+    font-size: 2rem;
+  }
+  .hero-stats {
+    gap: 1rem;
+  }
+  .nav-links {
+    gap: 0.6rem;
+  }
+  .nav-links a {
+    font-size: 0.75rem;
+  }
+  .section {
+    padding: 2.25rem 0.75rem;
+  }
+  .about-pills {
+    gap: 0.4rem 0.5rem;
   }
 }
