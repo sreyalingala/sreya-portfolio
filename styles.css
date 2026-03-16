@@ -237,51 +237,190 @@ body {
   background-clip: text;
 }
 
-/* ===== About ===== */
-.about-lead {
-  font-size: 1.15rem;
-  color: var(--text-muted);
-  margin-bottom: 2rem;
-  max-width: 640px;
+/* ===== About (premium) ===== */
+.section-about {
+  max-width: 1000px;
+  padding: 5.5rem 2rem;
 }
 
-.skills-box {
-  background: var(--bg-card);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: var(--radius);
-  padding: 1.75rem;
+.about-head-wrap {
+  position: relative;
+  margin-bottom: 1.5rem;
 }
 
-.skills-box h3 {
-  font-family: var(--font-head);
-  font-size: 1rem;
+.about-eyebrow {
+  font-size: 0.8rem;
   font-weight: 600;
-  margin-bottom: 1.25rem;
-  color: var(--text);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
 }
 
-.skills-list {
+.about-title {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: clamp(2.25rem, 5vw, 3rem);
+  letter-spacing: -0.04em;
+  position: relative;
+  z-index: 1;
+}
+
+.about-title span {
+  background: linear-gradient(135deg, #fff 0%, var(--accent) 50%, var(--accent-2) 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-title-glow {
+  position: absolute;
+  top: -20%;
+  left: -5%;
+  width: 40%;
+  height: 140%;
+  background: radial-gradient(ellipse at 30% 50%, rgba(0, 212, 255, 0.08) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.about-divider {
+  width: 100%;
+  max-width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0.6;
+  margin-bottom: 2.5rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem 3rem;
+  align-items: start;
+}
+
+.about-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.about-lead {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.about-body {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.about-edu {
+  margin-top: 0.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.about-edu p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.about-edu strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Right column: stat cards + tech */
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.about-stat-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.about-stat-card {
+  background: rgba(12, 12, 16, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.1rem;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.about-stat-card:hover {
+  border-color: rgba(0, 212, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 212, 255, 0.06);
+}
+
+.about-stat-num {
+  display: block;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: var(--accent);
+  line-height: 1.2;
+  margin-bottom: 0.2rem;
+}
+
+.about-stat-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.about-tech-wrap {
+  background: rgba(12, 12, 16, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.about-tech-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.about-pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
+  gap: 0.5rem 0.65rem;
 }
 
-.skill-pill {
+.about-pill {
   display: inline-block;
-  padding: 0.45rem 1rem;
-  background: var(--surface);
-  border: 1px solid rgba(0, 212, 255, 0.2);
-  border-radius: 999px;
-  font-size: 0.85rem;
+  padding: 0.4rem 0.9rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  font-size: 0.8rem;
   font-weight: 500;
   color: var(--text-muted);
-  transition: border-color 0.2s, color 0.2s, transform 0.2s;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
 }
 
-.skill-pill:hover {
-  border-color: var(--accent);
+.about-pill:hover {
+  border-color: rgba(0, 212, 255, 0.35);
   color: var(--accent);
-  transform: translateY(-1px);
+  background: rgba(0, 212, 255, 0.06);
 }
 
 /* ===== Experience (roadmap journey) ===== */
@@ -591,6 +730,13 @@ body {
   }
   .section {
     padding: 3.5rem 1.25rem;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .about-stat-cards {
+    grid-template-columns: 1fr 1fr;
   }
   .roadmap-steps {
     grid-template-columns: 1fr;
