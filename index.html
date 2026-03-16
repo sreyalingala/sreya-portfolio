@@ -4,81 +4,124 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sreya Sri Lingala | Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="#home" class="nav-logo">Sreya</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
   </header>
 
   <main>
     <section id="home" class="hero">
-      <h1>Sreya Sri Lingala</h1>
-      <p class="tagline">Data Analyst · BI & Analytics · Turning data into decisions</p>
+      <div class="hero-glow"></div>
+      <p class="hero-label reveal">Data Analyst & BI Engineer</p>
+      <h1 class="hero-title reveal">
+        <span class="hero-name">Sreya Sri Lingala</span>
+      </h1>
+      <p class="hero-tagline reveal">Turning data into decisions · Dashboards · SQL · Python · Tableau · Power BI</p>
+      <div class="hero-stats reveal">
+        <div class="stat"><span class="stat-num">200K+</span><span class="stat-label">Records queried</span></div>
+        <div class="stat"><span class="stat-num">34%</span><span class="stat-label">Query latency ↓</span></div>
+        <div class="stat"><span class="stat-num">26%</span><span class="stat-label">Workload automated</span></div>
+      </div>
+      <a href="#about" class="hero-cta reveal">Explore</a>
     </section>
 
-    <section id="about" class="section">
-      <h2>About</h2>
-      <p>MS in Computer Science (Virginia Tech, 4.0). I build dashboards, optimize SQL, and turn large datasets into clear metrics for stakeholders.</p>
-      <div class="skills-wrap">
-        <h3>Skills</h3>
-        <ul class="skills">
-          <li>Python · Pandas · SQL</li>
-          <li>Tableau · Power BI · DAX</li>
-          <li>Snowflake · BigQuery · dbt</li>
-          <li>Apache Airflow · AWS</li>
-        </ul>
+    <section id="about" class="section section-about">
+      <h2 class="section-title reveal"><span>About</span></h2>
+      <div class="about-content reveal">
+        <p class="about-lead">MS in Computer Science at Virginia Tech (4.0). I build dashboards, optimize SQL, and turn large datasets into clear metrics for stakeholders.</p>
+        <div class="skills-box">
+          <h3>Tech & tools</h3>
+          <div class="skills-list">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Pandas</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">Tableau</span>
+            <span class="skill-pill">Power BI</span>
+            <span class="skill-pill">DAX</span>
+            <span class="skill-pill">Snowflake</span>
+            <span class="skill-pill">BigQuery</span>
+            <span class="skill-pill">dbt</span>
+            <span class="skill-pill">Apache Airflow</span>
+            <span class="skill-pill">AWS</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="experience" class="section">
-      <h2>Experience</h2>
-      <article class="job">
-        <h3>Graduate Classroom Assistant – Data Visualization</h3>
-        <p class="meta">Virginia Tech · Aug 2024 – Present</p>
-        <ul>
-          <li>Queried 200K+ warehouse records in Snowflake; built star-schema models and Tableau dashboards.</li>
-          <li>Reduced query latency 34% via SQL tuning; automated ELT with Airflow (26% workload reduction).</li>
-        </ul>
-      </article>
-      <article class="job">
-        <h3>Web Application Developer – Data Analytics</h3>
-        <p class="meta">Virginia Tech Innovation Campus · Jan 2025 – Aug 2025</p>
-        <ul>
-          <li>Analyzed 500K+ records; built Power BI dashboards and SSIS ETL; A/B testing (6.8% conversion lift).</li>
-        </ul>
-      </article>
+    <section id="experience" class="section section-exp">
+      <h2 class="section-title reveal"><span>Experience</span></h2>
+      <div class="timeline">
+        <article class="job-card reveal">
+          <div class="job-accent"></div>
+          <div class="job-body">
+            <h3>Graduate Classroom Assistant – Data Visualization</h3>
+            <p class="job-meta">Virginia Tech · Aug 2024 – Present</p>
+            <ul class="job-list">
+              <li>Queried 200K+ warehouse records in Snowflake; built star-schema models and Tableau dashboards.</li>
+              <li>Reduced query latency 34% via SQL tuning; automated ELT with Airflow (26% workload reduction).</li>
+            </ul>
+          </div>
+        </article>
+        <article class="job-card reveal">
+          <div class="job-accent"></div>
+          <div class="job-body">
+            <h3>Web Application Developer – Data Analytics</h3>
+            <p class="job-meta">Virginia Tech Innovation Campus · Jan 2025 – Aug 2025</p>
+            <ul class="job-list">
+              <li>Analyzed 500K+ records; built Power BI dashboards and SSIS ETL; A/B testing (6.8% conversion lift).</li>
+            </ul>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <article class="project">
-        <h3>Customer Retention & Product Performance Analytics</h3>
-        <p class="tech">SAS, Tableau, SQL, Excel (Power Query)</p>
-        <p>Examined 420K+ transactions; built Tableau dashboards for cohort retention and CLV; SAS hypothesis testing for pricing (9% retention improvement opportunity).</p>
-      </article>
-      <article class="project">
-        <h3>Enterprise Sales Analytics & Reporting Pipeline</h3>
-        <p class="tech">Microsoft Fabric, T-SQL, SSIS, SSRS, Power BI (DAX)</p>
-        <p>SSIS ETL into SQL Server; star-schema model; Power BI dashboards for revenue and cohort sales; automated SSRS reporting (35% effort reduction).</p>
-      </article>
+    <section id="projects" class="section section-projects">
+      <h2 class="section-title reveal"><span>Projects</span></h2>
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-glow"></div>
+          <h3>Customer Retention & Product Performance Analytics</h3>
+          <p class="project-tech">SAS · Tableau · SQL · Excel (Power Query)</p>
+          <p class="project-desc">420K+ transactions; Tableau dashboards for cohort retention and CLV; SAS hypothesis testing (9% retention improvement opportunity).</p>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-glow"></div>
+          <h3>Enterprise Sales Analytics & Reporting Pipeline</h3>
+          <p class="project-tech">Microsoft Fabric · T-SQL · SSIS · SSRS · Power BI (DAX)</p>
+          <p class="project-desc">SSIS ETL into SQL Server; star-schema; Power BI dashboards for revenue and cohort sales; 35% reporting effort reduction.</p>
+        </article>
+      </div>
     </section>
 
-    <section id="contact" class="section contact">
-      <h2>Contact</h2>
-      <p><a href="mailto:lingalasreya2026@gmail.com">lingalasreya2026@gmail.com</a></p>
-      <p><a href="https://linkedin.com/in/lingala-sreya-sri" target="_blank" rel="noopener">LinkedIn</a></p>
+    <section id="contact" class="section section-contact">
+      <h2 class="section-title reveal"><span>Contact</span></h2>
+      <p class="contact-lead reveal">Let's work together.</p>
+      <div class="contact-links reveal">
+        <a href="mailto:lingalasreya2026@gmail.com" class="btn btn-primary">Email me</a>
+        <a href="https://linkedin.com/in/lingala-sreya-sri" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+      </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <p>&copy; Sreya Sri Lingala</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
