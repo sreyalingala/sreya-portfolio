@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --bg: #0f0f12;
   --surface: #1a1a1f;
@@ -170,4 +174,13 @@ footer {
   padding: 2rem;
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  .section {
+    padding: 3rem 1.25rem;
+  }
 }
