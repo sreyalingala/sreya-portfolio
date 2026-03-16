@@ -67,3 +67,68 @@ nav a:hover {
   font-size: 1.25rem;
   color: var(--muted);
 }
+
+.section {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+}
+
+.section p {
+  margin-bottom: 1rem;
+  color: var(--muted);
+}
+
+.skills-wrap {
+  margin-top: 2rem;
+}
+
+.skills-wrap h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+.skills {
+  list-style: none;
+}
+
+.skills li {
+  padding: 0.35rem 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.job {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: var(--surface);
+  border-radius: 8px;
+}
+
+.job h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.35rem;
+}
+
+.job .meta {
+  font-size: 0.9rem;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.job ul {
+  margin-left: 1.25rem;
+}
+
+.job li {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
