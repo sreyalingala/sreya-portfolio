@@ -85,49 +85,43 @@
 
     <section id="experience" class="section section-exp">
       <h2 class="section-title reveal"><span>Experience</span></h2>
-      <div class="roadmap reveal">
-        <div class="roadmap-road" aria-hidden="true">
-          <svg class="road-svg" viewBox="0 0 1000 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <path id="road-path" d="M 0 70 Q 250 40 500 70 Q 750 100 1000 70" />
-            </defs>
-            <use href="#road-path" class="road-stroke road-fill" />
-            <use href="#road-path" class="road-stroke road-dash" />
-          </svg>
-        </div>
-        <div class="roadmap-steps">
-          <article class="road-step step-1">
-            <div class="road-step-marker">
-              <span class="road-step-num">Step 01</span>
-              <div class="road-step-circle">
-                <svg class="road-step-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-              </div>
+      <div class="exp-cards">
+        <article class="exp-card reveal">
+          <div class="exp-card-accent" aria-hidden="true"></div>
+          <header class="exp-card-header">
+            <span class="exp-card-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            </span>
+            <div>
+              <h3 class="exp-card-title">Graduate Classroom Assistant – Data Visualization</h3>
+              <p class="exp-card-meta">Virginia Tech · Aug 2024 – Present</p>
             </div>
-            <div class="road-step-content">
-              <h3>Graduate Classroom Assistant – Data Visualization</h3>
-              <p class="road-step-meta">Virginia Tech · Aug 2024 – Present</p>
-              <ul>
-                <li>Queried 200K+ warehouse records in Snowflake; built star-schema models and Tableau dashboards.</li>
-                <li>Reduced query latency 34% via SQL tuning; automated ELT with Airflow (26% workload reduction).</li>
-              </ul>
+          </header>
+          <ul class="exp-card-list">
+            <li>Queried and transformed <span class="exp-metric">200K+</span> warehouse records in Snowflake to support <span class="exp-metric">18+</span> KPIs</li>
+            <li>Built star-schema models and Tableau dashboards for reporting</li>
+            <li>Reduced SQL query latency by <span class="exp-metric">34%</span> through indexing and optimization</li>
+            <li>Automated ELT pipelines with Apache Airflow reducing reporting workload by <span class="exp-metric">26%</span></li>
+          </ul>
+        </article>
+        <article class="exp-card reveal">
+          <div class="exp-card-accent" aria-hidden="true"></div>
+          <header class="exp-card-header">
+            <span class="exp-card-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            </span>
+            <div>
+              <h3 class="exp-card-title">Web Application Developer – Data Analytics</h3>
+              <p class="exp-card-meta">Virginia Tech Innovation Campus · Jan 2025 – Aug 2025</p>
             </div>
-          </article>
-          <article class="road-step step-2">
-            <div class="road-step-marker">
-              <span class="road-step-num">Step 02</span>
-              <div class="road-step-circle">
-                <svg class="road-step-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-              </div>
-            </div>
-            <div class="road-step-content">
-              <h3>Web Application Developer – Data Analytics</h3>
-              <p class="road-step-meta">Virginia Tech Innovation Campus · Jan 2025 – Aug 2025</p>
-              <ul>
-                <li>Analyzed 500K+ records; built Power BI dashboards and SSIS ETL; A/B testing (6.8% conversion lift).</li>
-              </ul>
-            </div>
-          </article>
-        </div>
+          </header>
+          <ul class="exp-card-list">
+            <li>Analyzed <span class="exp-metric">500K+</span> operational records using SQL and SAS</li>
+            <li>Built Power BI dashboards tracking <span class="exp-metric">15+</span> KPIs</li>
+            <li>Developed SSIS ETL workflows integrating multiple data sources</li>
+            <li>Conducted A/B testing that improved conversion by <span class="exp-metric">6.8%</span></li>
+          </ul>
+        </article>
       </div>
     </section>
 
