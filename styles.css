@@ -360,6 +360,8 @@ body {
 .road-step-circle {
   width: 72px;
   height: 72px;
+  min-width: 72px;
+  min-height: 72px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -367,6 +369,8 @@ body {
   border: 3px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
   transition: transform 0.25s, box-shadow 0.25s;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
 .road-step:hover .road-step-circle {
@@ -385,8 +389,12 @@ body {
 }
 
 .road-step-icon {
-  width: 28px;
-  height: 28px;
+  width: 28px !important;
+  height: 28px !important;
+  max-width: 28px;
+  max-height: 28px;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 
 .road-step-content {
