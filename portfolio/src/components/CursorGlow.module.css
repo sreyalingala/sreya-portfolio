@@ -1,0 +1,15 @@
+/* Desktop only — component not mounted on coarse pointers */
+.glow {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  margin-left: -16px;
+  margin-top: -16px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.2;
+  filter: blur(20px);
+  pointer-events: none;
+  z-index: 2000;
+  will-change: transform;
+}
