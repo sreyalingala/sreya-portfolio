@@ -5,7 +5,7 @@ import { sectionEntranceProps } from '../utils/sectionEntrance.js'
 import { useInView } from 'react-intersection-observer'
 import { ChevronDown } from 'lucide-react'
 /**
- * Stats shown below: sourced from portfolio.js `stats` — keep in sync:
+ * Stats shown below: sourced from portfolio.js `stats`; keep in sync:
  * 500K+ Records Analyzed · 22+ KPIs Defined & Tracked · 6+ AI Tools · 3 Years Experience
  */
 import { personalInfo, stats } from '../data/portfolio.js'

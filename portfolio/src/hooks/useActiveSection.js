@@ -13,7 +13,7 @@ const SECTION_IDS = [
 
 /**
  * Tracks which section is most likely "current" for nav highlighting (scroll spy).
- * @param {number} headerOffset — pixels from top (navbar + progress bar)
+ * @param {number} headerOffset pixels from top (navbar + progress bar)
  */
 export function useActiveSection(headerOffset = 88) {
   const [active, setActive] = useState('home')

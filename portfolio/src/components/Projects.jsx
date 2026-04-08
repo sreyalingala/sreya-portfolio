@@ -12,7 +12,7 @@ import styles from './Projects.module.css'
 
 const ease = [0.22, 1, 0.36, 1]
 
-/** lucide-react v1.7 has no Github export — match Lucide stroke style */
+/** lucide-react v1.7 has no Github export; match Lucide stroke style */
 function GithubIcon({ size = 24, className, 'aria-hidden': ariaHidden = true }) {
   return (
     <svg
@@ -32,7 +32,7 @@ function GithubIcon({ size = 24, className, 'aria-hidden': ariaHidden = true }) 
   )
 }
 
-/** Default visible bullets before "Show more" — same for every card */
+/** Default visible bullets before "Show more"; same for every card */
 const BULLET_PREVIEW = 3
 
 const MAX_OUTCOMES = 3

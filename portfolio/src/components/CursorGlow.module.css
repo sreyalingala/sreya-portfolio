@@ -1,4 +1,4 @@
-/* Desktop only — component not mounted on coarse pointers */
+/* Desktop only: component not mounted on coarse pointers */
 .glow {
   position: fixed;
   width: 32px;

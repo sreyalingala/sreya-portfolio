@@ -58,7 +58,7 @@ export const certifications = [
     date: "Mar 19, 2026",
     icon: "cisco",
     description:
-      "Completed hands-on labs covering the full analytics lifecycle — data acquisition, cleaning, statistical analysis, and visualization using Excel, SQL, and Tableau.",
+      "Completed hands-on labs covering the full analytics lifecycle: data acquisition, cleaning, statistical analysis, and visualization using Excel, SQL, and Tableau.",
     skills: ["SQL", "Tableau", "Excel", "Statistical Analysis", "Data Preparation"]
   }
 ];
@@ -187,13 +187,13 @@ export const projects = [
     title: "Retail Decision Copilot",
     badge: "AI + SQL + Full-Stack",
     tools: ["Next.js", "TypeScript", "FastAPI", "PostgreSQL", "OpenAI API", "Tailwind CSS", "Docker", "Neon", "Vercel"],
-    description: "A SQL-first retail analytics app where business questions in plain language are routed to 22 parameterized, analyst-grade PostgreSQL queries — with full SQL transparency, business readouts, and suggested next steps.",
+    description: "A SQL-first retail analytics app where business questions in plain language are routed to 22 parameterized, analyst-grade PostgreSQL queries, with full SQL transparency, business readouts, and suggested next steps.",
     bullets: [
-      "Built end-to-end analytics app with Next.js frontend, FastAPI backend, and PostgreSQL (Neon) — deployed on Vercel + Render.",
-      "Engineered an AI routing layer using OpenAI Responses API: designed prompts that map plain-language business questions to a catalog of 22 parameterized SQL analyses — without generating arbitrary queries.",
+      "Built end-to-end analytics app with Next.js frontend, FastAPI backend, and PostgreSQL (Neon), deployed on Vercel + Render.",
+      "Engineered an AI routing layer using OpenAI Responses API: designed prompts that map plain-language business questions to a catalog of 22 parameterized SQL analyses, without generating arbitrary queries.",
       "Implemented prompt engineering guardrails: catalog-only execution, parameter validation, type coercion, and deterministic fallbacks when the model output is invalid or the API is unavailable.",
       "Designed 22 analyst-grade parameterized SQL analyses covering revenue, gross margin, promotions, inventory risk, returns, and supplier performance across a 10-table retail schema.",
-      "Built rule-based explanation engine grounding business narratives in actual query results — intentionally avoiding open-ended LLM narrative to keep outputs inspectable and defensible.",
+      "Built rule-based explanation engine grounding business narratives in actual query results, intentionally avoiding open-ended LLM narrative to keep outputs inspectable and defensible.",
       "CI/CD via GitHub Actions; containerized API via Docker; production deployment on Vercel + Render with Neon Postgres."
     ],
     outcomes: [
@@ -209,9 +209,9 @@ export const projects = [
     title: "Credit Card Customer Behavior Analytics",
     badge: "EDA + Tableau Dashboard",
     tools: ["Python", "Pandas", "NumPy", "Seaborn", "Matplotlib", "Tableau", "Jupyter Notebook"],
-    description: "End-to-end customer behavior analysis exploring churn risk, spending patterns, and product engagement — from raw data cleaning in Python to an interactive Tableau public dashboard.",
+    description: "End-to-end customer behavior analysis exploring churn risk, spending patterns, and product engagement, from raw data cleaning in Python to an interactive Tableau public dashboard.",
     bullets: [
-      "Conducted full EDA on credit card customer dataset — demographics, credit limits, transaction counts, and account activity.",
+      "Conducted full EDA on credit card customer dataset: demographics, credit limits, transaction counts, and account activity.",
       "Cleaned and normalized raw survey-style data: handled missing values, standardized categorical fields, and prepared analysis-ready datasets.",
       "Analyzed churn patterns across card categories, customer tenure, product engagement levels, and spending behavior segments.",
       "Built interactive Tableau dashboard with KPI summary tiles, churn distribution charts, product engagement vs churn matrix, and transaction behavior comparisons.",
@@ -225,7 +225,7 @@ export const projects = [
     title: "Hospital Patient & Appointment Analytics",
     badge: "SQL Analytics",
     tools: ["PostgreSQL", "SQL", "CTEs", "Window Functions", "DBeaver"],
-    description: "A production-shaped PostgreSQL analytics project with a realistic hospital schema — patients, doctors, appointments, billing — and 15 reporting queries covering revenue, cancellation rates, and department performance.",
+    description: "A production-shaped PostgreSQL analytics project with a realistic hospital schema (patients, doctors, appointments, billing) and 15 reporting queries covering revenue, cancellation rates, and department performance.",
     bullets: [
       "Designed normalized 5-table hospital schema (departments, patients, doctors, appointments, billing) with foreign key constraints and unique indexes.",
       "Wrote 15 reporting queries covering patient counts, doctor utilization, department revenue, cancellation rates, unpaid bills, and top performers.",
@@ -241,7 +241,7 @@ export const projects = [
     title: "Mental Health & Work Productivity in Tech",
     badge: "Python + Streamlit",
     tools: ["Python", "Pandas", "NumPy", "Seaborn", "Matplotlib", "Streamlit", "Jupyter Notebook"],
-    description: "An end-to-end data analysis project exploring how mental health relates to remote work, company size, and work environment in the tech industry — with an interactive Streamlit dashboard.",
+    description: "An end-to-end data analysis project exploring how mental health relates to remote work, company size, and work environment in the tech industry, with an interactive Streamlit dashboard.",
     bullets: [
       "Cleaned and normalized messy Kaggle survey data: standardized yes/no/maybe/Y/N/1/0 responses, handled missing values, and encoded categorical variables.",
       "Engineered company size feature (Small 1–50, Medium 51–500, Large 500+) and remote/onsite flag for segmented analysis.",
@@ -257,7 +257,7 @@ export const projects = [
     title: "Customer Retention & Product Performance Analytics",
     badge: "Product Analytics",
     description:
-      "Product analytics on 420K+ transactions using SAS and SQL, with Tableau dashboards for cohort retention, funnel conversion, and CLV — plus automated pipelines that cut manual reporting.",
+      "Product analytics on 420K+ transactions using SAS and SQL, with Tableau dashboards for cohort retention, funnel conversion, and CLV, plus automated pipelines that cut manual reporting.",
     tools: ["SAS", "Tableau", "SQL", "Excel (Power Query)", "Git"],
     bullets: [
       "Examined 420K+ transactions using SAS and SQL identifying churn drivers and product adoption patterns across 5 segments.",

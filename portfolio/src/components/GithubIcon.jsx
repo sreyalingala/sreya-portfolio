@@ -1,4 +1,4 @@
-/** GitHub mark — matches Lucide stroke style; avoids lucide-react `Github` export differences across versions. */
+/** GitHub mark: matches Lucide stroke style; avoids lucide-react `Github` export differences across versions. */
 export default function GithubIcon({ size = 24, className, 'aria-hidden': ariaHidden = true }) {
   return (
     <svg

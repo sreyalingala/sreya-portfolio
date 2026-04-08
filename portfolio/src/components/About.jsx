@@ -29,13 +29,13 @@ export default function About() {
 
           <p className={styles.bio}>
             I&apos;m a data and business analyst completing my MS in CS at Virginia Tech.
-            I turn complex datasets into clear decisions — bridging the gap between
+            I turn complex datasets into clear decisions, bridging the gap between
             business stakeholders and technical data systems.
           </p>
 
           <p className={styles.bio}>
             From gathering requirements and defining KPIs to building executive dashboards
-            and automating pipelines — I use SQL, Python, and AI tools like Claude and
+            and automating pipelines. I use SQL, Python, and AI tools like Claude and
             Power BI Copilot to deliver analytics that stakeholders can actually act on.
             I care about making data useful, not just present.
           </p>
@@ -77,7 +77,7 @@ export default function About() {
                 <span className={`${styles.dot} ${styles.dotRed}`} />
                 <span className={`${styles.dot} ${styles.dotYellow}`} />
                 <span className={`${styles.dot} ${styles.dotGreen}`} />
-                <span className={styles.terminalTitle}>query.sql — portfolio</span>
+                <span className={styles.terminalTitle}>query.sql | portfolio</span>
               </div>
               <div className={styles.terminalBody}>
                 <pre className={styles.code}>

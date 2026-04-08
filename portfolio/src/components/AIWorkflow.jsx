@@ -219,7 +219,7 @@ export default function AIWorkflow() {
       </div>
 
       <p className={styles.bottomStrip}>
-        This portfolio was designed and built using Cursor AI, Claude, and React — an example of
+        This portfolio was designed and built using Cursor AI, Claude, and React, an example of
         AI-augmented work in practice.
       </p>
     </Motion.section>
